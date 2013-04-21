@@ -17,7 +17,9 @@
 		715BA2291723D46C00E470CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 715BA2281723D46C00E470CC /* Default@2x.png */; };
 		715BA22B1723D46C00E470CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 715BA22A1723D46C00E470CC /* Default-568h@2x.png */; };
 		715BA22E1723D46C00E470CC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715BA22C1723D46C00E470CC /* MainStoryboard.storyboard */; };
-		715BA2311723D46C00E470CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715BA2301723D46C00E470CC /* ViewController.m */; };
+		715BA2311723D46C00E470CC /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715BA2301723D46C00E470CC /* InputViewController.m */; };
+		715BA2391723D63800E470CC /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 715BA2381723D63800E470CC /* BMI.m */; };
+		715BA23C1723DA6700E470CC /* CalculationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715BA23B1723DA6700E470CC /* CalculationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,12 @@
 		715BA2281723D46C00E470CC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		715BA22A1723D46C00E470CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		715BA22D1723D46C00E470CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		715BA22F1723D46C00E470CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		715BA2301723D46C00E470CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		715BA22F1723D46C00E470CC /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		715BA2301723D46C00E470CC /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		715BA2371723D63800E470CC /* BMI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMI.h; sourceTree = "<group>"; };
+		715BA2381723D63800E470CC /* BMI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMI.m; sourceTree = "<group>"; };
+		715BA23A1723DA6700E470CC /* CalculationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationViewController.h; sourceTree = "<group>"; };
+		715BA23B1723DA6700E470CC /* CalculationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +92,12 @@
 				715BA2231723D46C00E470CC /* AppDelegate.h */,
 				715BA2241723D46C00E470CC /* AppDelegate.m */,
 				715BA22C1723D46C00E470CC /* MainStoryboard.storyboard */,
-				715BA22F1723D46C00E470CC /* ViewController.h */,
-				715BA2301723D46C00E470CC /* ViewController.m */,
+				715BA23A1723DA6700E470CC /* CalculationViewController.h */,
+				715BA23B1723DA6700E470CC /* CalculationViewController.m */,
+				715BA22F1723D46C00E470CC /* InputViewController.h */,
+				715BA2301723D46C00E470CC /* InputViewController.m */,
+				715BA2371723D63800E470CC /* BMI.h */,
+				715BA2381723D63800E470CC /* BMI.m */,
 				715BA21B1723D46C00E470CC /* Supporting Files */,
 			);
 			path = BMI;
@@ -175,7 +185,9 @@
 			files = (
 				715BA2211723D46C00E470CC /* main.m in Sources */,
 				715BA2251723D46C00E470CC /* AppDelegate.m in Sources */,
-				715BA2311723D46C00E470CC /* ViewController.m in Sources */,
+				715BA2311723D46C00E470CC /* InputViewController.m in Sources */,
+				715BA2391723D63800E470CC /* BMI.m in Sources */,
+				715BA23C1723DA6700E470CC /* CalculationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
