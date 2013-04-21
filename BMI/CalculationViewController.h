@@ -13,4 +13,6 @@
 
 @property BMI *bmi;
 @property (weak, nonatomic) IBOutlet UILabel *bmiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bmiTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *weightRecomendationsLabel;
 @end

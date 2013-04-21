@@ -12,4 +12,6 @@
 @property float weight, height;
 
 - (float)calculateBMI;
+- (NSString *)calculateBMIText;
+- (NSString *)weightRecomendations;
 @end

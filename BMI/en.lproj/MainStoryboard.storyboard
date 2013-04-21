@@ -80,9 +80,28 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFn-82-39g">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BMI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFn-82-39g">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="99" id="1jD-WF-ETD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ваш Индекс массы тела (ИМТ)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47e-mR-ILL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BMIText" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URh-6d-ajy">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WeightRecomendations" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-oE-1w5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="Qtb-Dr-zZB"/>
+                                    <constraint firstAttribute="height" constant="69" id="qzu-jd-cO5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -91,13 +110,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oFn-82-39g" firstAttribute="leading" secondItem="j8S-r6-NBa" secondAttribute="leading" constant="139" id="Rhk-tL-CXu"/>
-                            <constraint firstItem="oFn-82-39g" firstAttribute="top" secondItem="j8S-r6-NBa" secondAttribute="top" constant="178" id="yFf-FQ-Ije"/>
+                            <constraint firstItem="47e-mR-ILL" firstAttribute="leading" secondItem="j8S-r6-NBa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3LT-I0-tWc"/>
+                            <constraint firstItem="URh-6d-ajy" firstAttribute="centerX" secondItem="j8S-r6-NBa" secondAttribute="centerX" type="default" id="bcU-PT-7Be"/>
+                            <constraint firstItem="hcg-oE-1w5" firstAttribute="leading" secondItem="j8S-r6-NBa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dty-Qg-WoL"/>
+                            <constraint firstItem="URh-6d-ajy" firstAttribute="leading" secondItem="oFn-82-39g" secondAttribute="leading" type="default" id="nSW-dC-i8N"/>
+                            <constraint firstItem="47e-mR-ILL" firstAttribute="top" secondItem="j8S-r6-NBa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="rnL-Jt-pvE"/>
+                            <constraint firstItem="oFn-82-39g" firstAttribute="top" secondItem="47e-mR-ILL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tnV-C7-STJ"/>
+                            <constraint firstItem="hcg-oE-1w5" firstAttribute="top" secondItem="j8S-r6-NBa" secondAttribute="top" constant="111" id="uIK-za-Uv7"/>
+                            <constraint firstItem="URh-6d-ajy" firstAttribute="top" secondItem="oFn-82-39g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vRT-m1-JOJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1gN-qf-oVi"/>
                     <connections>
                         <outlet property="bmiLabel" destination="oFn-82-39g" id="JmE-Su-5pB"/>
+                        <outlet property="bmiTextLabel" destination="URh-6d-ajy" id="lh2-sS-cAk"/>
+                        <outlet property="weightRecomendationsLabel" destination="hcg-oE-1w5" id="mdX-7E-OWd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhS-L1-gK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -128,6 +155,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CalculationViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="bmiLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bmiTextLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="weightRecomendationsLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="InputViewController" superclassName="UIViewController">

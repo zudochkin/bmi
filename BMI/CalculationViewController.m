@@ -30,8 +30,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSLog(@"%f", [bmi calculateBMI]);
+    NSLog(@"%@", [bmi calculateBMIText]);
     self.bmiLabel.text = [[NSNumber numberWithFloat:[bmi calculateBMI]] stringValue];
+    
+    self.bmiTextLabel.text = [bmi calculateBMIText];
+    
+    self.weightRecomendationsLabel.text = [bmi weightRecomendations];
 }
 
 - (void)didReceiveMemoryWarning
